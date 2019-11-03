@@ -1,0 +1,46 @@
+{{#b:warning}}{{#b:figlet}}{{templateData.name}}{{/b:figlet}}{{/b:warning}}
+
+{{#b:h1}}{{templateData.appId}}{{/b:h1}}
+
+{{#b:success}}{{#b:b}}Environment:{{/b:b}}{{/b:success}} {{templateData.envId}}
+
+{{#b:b}}{{#b:u}}Project URLS{{/b:u}}{{/b:b}}
+
+{{#b:list}}
+{{#b:li}}{{#b:b}}Production Server{{/b:b}}{{/b:li}}
+{{#b:list}}
+{{#b:li}}http://yourproject.com{{/b:li}}
+{{/b:list}}
+
+{{#b:li}}{{#b:b}}Staging Server{{/b:b}}{{/b:li}}
+{{#b:list}}
+{{#b:li}}http://staging.yourproject.com{{/b:li}}
+{{/b:list}}
+
+{{#b:li}}{{#b:b}}Project Files{{/b:b}}{{/b:li}}
+{{#b:list}}
+{{#b:li}}http://yourproject.atlassian.net/wiki{{/b:li}}
+{{#b:li}}http://yourproject.atlassian.net{{/b:li}}
+{{#b:li}}http://bitbucket.org/yourproject{{/b:li}}
+{{/b:list}}
+{{/b:list}}
+
+{{#b:b}}
+{{/b:b}}
+
+
+{{#b:box}}{{#b:b}}{{#b:info}}Useful Commands{{/b:info}}{{/b:b}}
+
+Restart {{#b:u}}example_service{{/b:u}} by running
+{{#b:d}}    sudo supervisorctl example_service restart{{/b:d}}
+
+{{/b:box}}
+
+
+
+{{#b:d}}To update this information alter the template at:
+{{__template_path}}
+
+Then run the following:
+    {{__update_command}}
+{{/b:d}}
